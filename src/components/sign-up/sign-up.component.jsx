@@ -6,6 +6,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 import './sign-up.styles.scss';
+import { createLogger } from 'redux-logger';
 
 class SignUp extends React.Component {
   constructor() {
@@ -41,7 +42,7 @@ class SignUp extends React.Component {
         password: '',
         confirmPassword: '',
       })
-    } catch (error) {
+    } catch (error) { 
       console.error(error);
     }
   };

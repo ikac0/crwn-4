@@ -12,15 +12,6 @@ import { selectCollection } from '../../redux/shop/shop.selectors';
 
 import './collection.styles.scss';
 
-// const CollectionPage  = ({ collections }) => (
-//   <div className='collections-overview'>
-//     {/* {collections.map(({ id, ...otherCollectionProps }) => (
-//       <CollectionPreview key={id} {...otherCollectionProps} />
-//     ))} */}
-//     <h1>collections</h1>
-//   </div>
-// );
-
 const CollectionPage = ({collection}) => {
     const { title, items } = collection;
     return (
@@ -45,4 +36,4 @@ const mapStateToProps = (state, ownProps) => ({
 
 // export default connect(mapStateToProps)(CollectionPage );
 
-export default connect(mapStateToProps)(CollectionPage);
+export default connect(mapStateToProps)(CollectionPage)

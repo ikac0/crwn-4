@@ -42,6 +42,4 @@ const directoryReducer = (state = INITIAL_STATE, action) => {
   }
 }
 
-// const mapStateToProps = 
-
 export default directoryReducer;

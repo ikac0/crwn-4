@@ -30,10 +30,4 @@ const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state)
 })
 
-// const mapStateToProps = createStructuredSelector({
-//   collections: selectCollectionsForPreview
-// });
-
-// export default connect(mapStateToProps)(CollectionPage );
-
 export default connect(mapStateToProps)(CollectionPage)

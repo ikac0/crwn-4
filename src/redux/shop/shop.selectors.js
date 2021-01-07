@@ -11,11 +11,11 @@ export const selectCollections = createSelector(
 
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],
-  collections => Object.keys(collections).map(key => collections[key]) //mapping through object with the key:value search, since we can't map through array now, since its nonexistent, and we changed it to an object. at the shop.data.
+  collections => collections ? Object.keys(collections).map(key => collections[key]) : [] //mapping through object with the key:value search, since we can't map through array now, since its nonexistent, and we changed it to an object. at the shop.data. and we re-used it to place the shopdata into our firestore
 );
 
 export const selectCollection = memoize((collectionUrlParam) =>
   createSelector(
     [selectCollections],
-    collections => collections[collectionUrlParam])
+    collections => collections ? collections[collectionUrlParam]: null)
 );

@@ -42,7 +42,7 @@ export const AddButton = styled(CustomButton)`
 
   @media and screen (max-width: 800px) {
     display: block;
-    opacity: 0,9;
+    opacity: 0.9;
     min-width: unset;
     padding: 0 10px;
   }
@@ -66,11 +66,11 @@ export const CollectionFooterContainer = styled.div`
 `;
 
 export const NameContainer = styled.span`
-  width: 90%;
-  margin-bottom: 15px;
+  width: 80%;
+  margin-bottom: 35px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 20%;
   text-align: right;
 `;

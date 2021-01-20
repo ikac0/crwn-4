@@ -51,6 +51,14 @@ export const ContentContainer = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+
+  @media and screen (max-width: 800px) {
+    height: 70px;
+    width: 100px;
+  }
+  @media screen and (max-width: 460px) {
+    width: 90px;
+  }
 `;
 
 export const ContentTitle = styled.span`

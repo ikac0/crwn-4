@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { CustomButtonContainer } from './custom-button.styles';
 
 // const CustomButton = ({ children, isGoogleSignIn, inverted, ...restProps }) => (
@@ -9,20 +8,8 @@ import { CustomButtonContainer } from './custom-button.styles';
 //   </button>
 // )
 
-//using scss? kinda complicated.
-
-// const CustomButton = ({ children, ...props }) => (
-//     <CustomButtonContainer {...props}> 
-//     {children}
-//     </CustomButtonContainer>
-//   )
-
 const CustomButton = ({ children, ...props }) => (
   <CustomButtonContainer {...props}>{children}</CustomButtonContainer>
 );
 
 export default CustomButton;
-
-// using styled components? maybe. seems legit
-
-// export default CustomButton;

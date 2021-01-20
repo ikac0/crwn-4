@@ -8,7 +8,6 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
-
   &:hover {
     .image {
       opacity: 0.8;
@@ -20,12 +19,10 @@ export const CollectionItemContainer = styled.div`
   }
   @media screen and (max-width: 800px) {
     width: 40vw;
-
     &:hover {
       .image {
         opacity: unset;
       }
-      
       button {
         opacity: unset;
       }
@@ -39,8 +36,7 @@ export const AddButton = styled(CustomButton)`
   position: absolute;
   top: 255px;
   display: none;
-
-  @media and screen (max-width: 800px) {
+  @media screen and (max-width: 800px) {
     display: block;
     opacity: 0.9;
     min-width: unset;
@@ -66,11 +62,11 @@ export const CollectionFooterContainer = styled.div`
 `;
 
 export const NameContainer = styled.span`
-  width: 80%;
-  margin-bottom: 35px;
+  width: 90%;
+  margin-bottom: 15px;
 `;
 
 export const PriceContainer = styled.span`
-  width: 20%;
+  width: 10%;
   text-align: right;
 `;

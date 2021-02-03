@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const SignInAndSignUpContainer = styled.div`
   width: 850px;
@@ -11,7 +11,7 @@ export const SignInAndSignUpContainer = styled.div`
     align-items: center;
     width: unset;
 
-    >*:first-child {
+    > *:first-child {
       margin-bottom: 50px;
     }
   }

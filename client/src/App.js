@@ -14,6 +14,7 @@ import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
+const ContactPage = lazy(() => import("./pages/contact/contact.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
 const SignInAndSignUpPage = lazy(() =>
   import("./pages/sign-in-and-sign-up/sign-in-and-sign-up.component")
@@ -55,6 +56,7 @@ class App extends React.Component {
             <Suspense fallback={<Spinner />}>
               <Route exact path="/" component={HomePage} />
               <Route path="/shop" component={ShopPage} />
+              <Route path="/contact" component={ContactPage} />
               <Route exact path="/checkout" component={CheckoutPage} />
               <Route
                 exact
